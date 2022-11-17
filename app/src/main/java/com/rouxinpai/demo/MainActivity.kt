@@ -6,13 +6,13 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
 import androidx.core.os.postDelayed
-import com.view.multistatepage.OnRetryClickListener
+import com.view.multistatepage.MultiStateContainer
+import com.view.multistatepage.bindMultiState
+import com.view.multistatepage.intf.OnRetryClickListener
 import com.view.multistatepage.state.EmptyState
 import com.view.multistatepage.state.ErrorState
 import com.view.multistatepage.state.LoadingState
-import com.zy.multistatepage.MultiStateContainer
-import com.zy.multistatepage.bindMultiState
-import com.zy.multistatepage.state.SuccessState
+import com.view.multistatepage.state.SuccessState
 
 class MainActivity : AppCompatActivity(), OnRetryClickListener {
 

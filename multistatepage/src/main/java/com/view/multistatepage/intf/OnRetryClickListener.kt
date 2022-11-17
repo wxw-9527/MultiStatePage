@@ -1,4 +1,4 @@
-package com.view.multistatepage
+package com.view.multistatepage.intf
 
 /**
  * author : Saxxhw
