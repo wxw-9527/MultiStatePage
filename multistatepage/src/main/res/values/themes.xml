@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 加载反馈页控件基础样式 -->
+    <style name="MultiStatePageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 加载反馈页提示样式 -->
+    <style name="MultiStatePageStyle.Message">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textColor">@color/multi_state_page__message_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 加载反馈页描述样式 -->
+    <style name="MultiStatePageStyle.Desc">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/multi_state_page__desc_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

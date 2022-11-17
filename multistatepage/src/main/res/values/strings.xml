@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 数据加载状态相关 -->
+    <string name="multi_state_page__loading_message">努力加载中</string>
+    <string name="multi_state_page__loading_desc">请您耐心等候</string>
+    <string name="multi_state_page__empty_message">暂无数据</string>
+    <string name="multi_state_page__error_message">发生了错误</string>
+    <string name="multi_state_page__scanning_message">标签扫描中…</string>
+    <string name="multi_state_page__error_desc">请检查手机网络是否连接</string>
+
+</resources>
