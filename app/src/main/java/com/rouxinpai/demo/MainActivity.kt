@@ -4,25 +4,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.widget.TextView
 import androidx.core.os.postDelayed
-import com.view.multistatepage.MultiStateContainer
-import com.view.multistatepage.bindMultiState
+import com.rouxinpai.demo.databinding.ActivityMainBinding
 import com.view.multistatepage.intf.OnRetryClickListener
 import com.view.multistatepage.state.EmptyState
 import com.view.multistatepage.state.ErrorState
 import com.view.multistatepage.state.LoadingState
-import com.view.multistatepage.state.SuccessState
+import com.zy.multistatepage.MultiStateContainer
+import com.zy.multistatepage.bindMultiState
+import com.zy.multistatepage.state.SuccessState
 
 class MainActivity : AppCompatActivity(), OnRetryClickListener {
+
+    private lateinit var binding: ActivityMainBinding
 
     private lateinit var mLoadState: MultiStateContainer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         // 初始化
-        mLoadState = findViewById<TextView>(R.id.tv_content).bindMultiState()
+        mLoadState = binding.refreshLayout.bindMultiState()
         //
         showLoadingPage()
         Handler(Looper.getMainLooper()).postDelayed(2 * 1000) {
@@ -123,6 +126,6 @@ class MainActivity : AppCompatActivity(), OnRetryClickListener {
     private fun showSuccessPage() {
         val loadState = mLoadState
         if (loadState.currentState is SuccessState) return
-        mLoadState.show<SuccessState>()
+        loadState.show<SuccessState>()
     }
 }

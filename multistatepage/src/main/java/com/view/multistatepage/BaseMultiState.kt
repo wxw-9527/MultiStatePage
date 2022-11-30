@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
 import com.view.multistatepage.intf.OnRetryClickListener
+import com.zy.multistatepage.MultiState
+import com.zy.multistatepage.MultiStateContainer
 
 /**
  * author : Saxxhw
