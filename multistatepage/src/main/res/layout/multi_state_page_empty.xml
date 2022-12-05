@@ -17,4 +17,9 @@
         android:id="@+id/tv_message"
         style="@style/MultiStatePageStyle.Message"
         android:text="@string/multi_state_page__empty_message" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/MultiStatePageStyle.Desc"
+        android:text="" />
 </LinearLayout>
